@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Reveal({ children, className = "", delay = 0 }) {
+export default function Reveal({ children, className = "", delay = 0, id }) {
   const [visible, setVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -23,6 +23,7 @@ export default function Reveal({ children, className = "", delay = 0 }) {
   return (
     <div
       ref={elementRef}
+      id={id}
       className={`reveal ${visible ? "is-visible" : ""} ${className}`}
       style={{ "--reveal-delay": `${delay}ms` }}
     >

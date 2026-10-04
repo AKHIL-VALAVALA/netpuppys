@@ -1,3 +1,102 @@
+export const navGroups = [
+  {
+    label: "About TIS",
+    href: "#about",
+    links: [
+      ["Our History", "#history"],
+      ["Why Choose Us?", "#rankings"],
+      ["Vision & Mission", "#mission"],
+      ["Awards & Achievements", "#awards"],
+      ["Headmaster's Profile", "#leadership"],
+      ["Our Management", "#leadership"],
+      ["Virtual Tour", "#campus"],
+    ],
+  },
+  {
+    label: "Academics",
+    href: "#academics",
+    links: [
+      ["Pedagogy", "#pedagogy"],
+      ["Curriculum", "#curriculum"],
+      ["Streams Offered", "#streams"],
+      ["International Tie-Ups", "#collaborations"],
+      ["Publications", "#blog"],
+      ["Digital Workstations", "#facilities"],
+      ["Awadh Tinkering Lab", "#curriculum"],
+    ],
+  },
+  {
+    label: "Boarding Life",
+    href: "#campus",
+    links: [
+      ["Pastoral Care", "#campus"],
+      ["Food & Nutrition", "#campus"],
+      ["Facilities", "#facilities"],
+      ["Infirmary & Medical Facilities", "#contact"],
+      ["Our House System", "#campus"],
+      ["Teachers Profile", "#leadership"],
+    ],
+  },
+  {
+    label: "Beyond Academics",
+    href: "#sports",
+    links: [
+      ["Sports", "#sports"],
+      ["Beyond the Curriculum", "#sports"],
+      ["Clubs & Societies", "#sports"],
+      ["Celebrations", "#visitors"],
+      ["Mentor & Mentee System", "#mission"],
+      ["Career Counselling", "#contact"],
+      ["Raasta Students Counselling", "#contact"],
+    ],
+  },
+  {
+    label: "Events",
+    href: "#visitors",
+    links: [
+      ["Sports Day", "#sports"],
+      ["38th National Games", "#sports"],
+      ["Founders Day", "#visitors"],
+      ["Confluence", "#visitors"],
+      ["Prominent Personalities", "#visitors"],
+      ["Sports Achievements", "#awards"],
+    ],
+  },
+  {
+    label: "Admission",
+    href: "#contact",
+    links: [
+      ["Admission Procedure", "#contact"],
+      ["Pay Fee Online", "#contact"],
+      ["Fee Structure", "#contact"],
+      ["Scholarship Programs", "#contact"],
+      ["Withdrawal Policy", "#contact"],
+    ],
+  },
+  {
+    label: "Mandatory Disclosure",
+    href: "#footer",
+    links: [["Mandatory Disclosure", "#footer"]],
+  },
+  {
+    label: "Alumni Network",
+    href: "#voices",
+    links: [["Alumni Network", "#voices"]],
+  },
+  {
+    label: "Quick Links",
+    href: "#footer",
+    links: [
+      ["Blogs", "#blog"],
+      ["Contact Us", "#contact"],
+      ["Newsletter", "#voices"],
+      ["Careers", "#contact"],
+      ["Transfer Certificate", "#contact"],
+      ["Parent Testimonial", "#voices"],
+    ],
+  },
+];
+
 export const navLinks = [
   ["About Tulas", "#about"],
   ["Academics", "#academics"],

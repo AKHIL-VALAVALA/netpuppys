@@ -65,7 +65,7 @@ export default function Testimonials() {
           </a>
         </div>
       </section>
-      <section className="collaborations-section">
+      <section className="collaborations-section" id="collaborations">
         <div className="wrap collaborations-layout">
           <div>
             <span className="eyebrow">Opportunities beyond the classroom</span>

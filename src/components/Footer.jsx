@@ -47,11 +47,7 @@ export default function Footer() {
               {label}
             </a>
           ))}
-          <a
-            href="https://tis.edu.in/virtual-tour/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#campus">
             Virtual tour
           </a>
         </div>

@@ -12,7 +12,7 @@ export default function Facilities() {
           loading="lazy"
         />
       </div>
-      <div className="campus-panel">
+      <div className="campus-panel" id="facilities">
         <Reveal>
           <SectionHeading
             eyebrow="The Tulas difference"
@@ -39,11 +39,9 @@ export default function Facilities() {
         </div>
         <a
           className="underlined-link link-light"
-          href="https://tis.edu.in/virtual-tour/"
-          target="_blank"
-          rel="noreferrer"
+          href="#campus"
         >
-          Take the virtual tour <span aria-hidden="true">↗</span>
+          Explore our campus <span aria-hidden="true">↓</span>
         </a>
       </div>
     </section>

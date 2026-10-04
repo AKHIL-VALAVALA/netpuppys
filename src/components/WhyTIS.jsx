@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading.jsx";
 export default function WhyTIS() {
   return (
     <>
-      <section className="rankings-section section-pad">
+      <section className="rankings-section section-pad" id="rankings">
         <div className="wrap">
           <Reveal>
             <SectionHeading
@@ -68,7 +68,7 @@ export default function WhyTIS() {
           </div>
         </div>
       </section>
-      <section className="awards-band">
+      <section className="awards-band" id="awards">
         <div className="wrap awards-inner">
           <div>
             <span className="eyebrow">The effort behind every milestone</span>
@@ -83,8 +83,8 @@ export default function WhyTIS() {
             best. Every achievement is a reminder of what students can do when
             they are supported to go further.
           </p>
-          <a className="button button-light" href="https://tis.edu.in/">
-            Explore TIS <span aria-hidden="true">↗</span>
+          <a className="button button-light" href="#about">
+            Explore TIS <span aria-hidden="true">↓</span>
           </a>
         </div>
       </section>

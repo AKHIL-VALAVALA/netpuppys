@@ -1,19 +1,6 @@
 import { useEffect, useState } from "react";
-import { navLinks } from "../content.js";
+import { navGroups } from "../content.js";
 import Brand from "./Brand.jsx";
-
-const desktopLinks = [
-  ["About TIS", "#about"],
-  ["Academics", "#academics"],
-  ["Boarding life", "#campus"],
-  ["Beyond academics", "#sports"],
-  ["Blog", "#blog"],
-  ["Events", "#visitors"],
-  ["Admission", "#contact"],
-  ["Mandatory disclosure", "#footer"],
-  ["Alumni network", "#voices"],
-  ["Quick links", "#footer"],
-];
 
 export default function Navbar({ theme, setTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -81,10 +68,17 @@ export default function Navbar({ theme, setTheme }) {
           <span />
         </button>
         <nav className="desktop-nav" aria-label="School navigation">
-          {desktopLinks.map(([label, href]) => (
-            <a key={label} href={href}>
-              {label}
-            </a>
+          {navGroups.map((group) => (
+            <div className="desktop-nav-item" key={group.label}>
+              <a href={group.href}>{group.label}</a>
+              <div className="desktop-dropdown">
+                {group.links.map(([label, href]) => (
+                  <a key={label} href={href}>
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </nav>
         <nav
@@ -92,10 +86,24 @@ export default function Navbar({ theme, setTheme }) {
           id="main-navigation"
           aria-label="Main navigation"
         >
-          {navLinks.map(([label, href]) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)}>
-              {label}
-            </a>
+          {navGroups.map((group) => (
+            <details className="mobile-nav-group" key={group.label}>
+              <summary>{group.label}</summary>
+              <div className="mobile-dropdown">
+                <a href={group.href} onClick={() => setMenuOpen(false)}>
+                  Explore {group.label}
+                </a>
+                {group.links.map(([label, href]) => (
+                  <a
+                    key={label}
+                    href={href}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </details>
           ))}
         </nav>
       </div>
