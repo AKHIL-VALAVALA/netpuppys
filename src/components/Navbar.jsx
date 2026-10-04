@@ -7,6 +7,7 @@ const desktopLinks = [
   ["Academics", "#academics"],
   ["Boarding life", "#campus"],
   ["Beyond academics", "#sports"],
+  ["Blog", "#blog"],
   ["Events", "#visitors"],
   ["Admission", "#contact"],
   ["Mandatory disclosure", "#footer"],

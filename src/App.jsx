@@ -3,6 +3,7 @@ import About from "./components/About.jsx";
 import Academics from "./components/Academics.jsx";
 import Activities from "./components/Activities.jsx";
 import AdmissionsCTA from "./components/AdmissionsCTA.jsx";
+import Blog from "./components/Blog.jsx";
 import Contact from "./components/Contact.jsx";
 import Facilities from "./components/Facilities.jsx";
 import Footer from "./components/Footer.jsx";
@@ -89,6 +90,7 @@ function App() {
         <Facilities />
         <WhyTIS />
         <Testimonials />
+        <Blog />
         <AdmissionsCTA />
       </main>
       <Footer />

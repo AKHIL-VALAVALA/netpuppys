@@ -3,6 +3,7 @@ export const navLinks = [
   ["Academics", "#academics"],
   ["Campus life", "#campus"],
   ["Sports", "#sports"],
+  ["Blog", "#blog"],
   ["Parent voices", "#voices"],
   ["Contact", "#contact"],
 ];

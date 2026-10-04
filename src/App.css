@@ -2500,6 +2500,62 @@
   white-space: nowrap;
   clip-path: inset(50%);
 }
+.blog-section {
+  background: var(--paper);
+}
+.blog-section .section-heading {
+  margin-bottom: 40px;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.blog-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--aqua);
+  box-shadow: 0 14px 32px rgba(40, 35, 33, 0.1);
+}
+.blog-category {
+  color: var(--wine);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.blog-card h3 {
+  margin: 16px 0 8px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.blog-card p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.blog-card .underlined-link {
+  margin-top: auto;
+}
+:root[data-theme="dark"] .blog-card:hover {
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+}
 @keyframes hero-image-enter {
   from {
     opacity: 0.45;
@@ -2522,6 +2578,16 @@
   .admission-strip,
   .desktop-nav {
     display: none;
+  }
+  @media (max-width: 850px) {
+    .blog-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
   }
   .brand {
     top: 13px;
