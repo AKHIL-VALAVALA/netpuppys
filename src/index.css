@@ -1,0 +1,81 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #282321;
+  background: #faf8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --paper: #faf8f4;
+  --soft-bg: #f0ece5;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --ink: #282321;
+  --muted: #766d67;
+  --line: #ddd6cf;
+  --wine: #8d2932;
+  --wine-deep: #68232a;
+  --aqua: #b8e7dc;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+:root[data-theme="dark"] {
+  --paper: #111827;
+  --soft-bg: #172231;
+  --card-bg: #1b2939;
+  --input-bg: #111827;
+  --ink: #f3f7ff;
+  --muted: #adc0d9;
+  --line: rgba(255, 255, 255, 0.12);
+  --wine: #ff7b8b;
+  --wine-deep: #d73f59;
+  --aqua: #84ddd0;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--paper);
+  color: var(--ink);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+  color-scheme: light;
+}
+:root[data-theme="dark"] body {
+  color-scheme: dark;
+}
+body,
+button,
+input,
+select {
+  font-family: "DM Sans", sans-serif;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  max-width: 100%;
+}
+#root {
+  width: 100%;
+  min-height: 100svh;
+  overflow: clip;
+}
+::selection {
+  background: var(--aqua);
+  color: var(--wine-deep);
+}
+:focus-visible {
+  outline: 2px solid var(--aqua);
+  outline-offset: 3px;
+}
